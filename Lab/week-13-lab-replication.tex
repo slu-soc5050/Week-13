@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Lab-13 Replication}
+\author{Christopher Prener, Ph.D.}
+\date{November 20, 2017}
+
+\begin{document}
+
+\maketitle
+\section{Raw Table}
+
+\begin{table}[!htbp] \centering 
+  \caption{Engine Characteristics' Impact on Annual Fuel Costs} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{fuelCost} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ displ & 283.831$^{***}$ & 99.669$^{***}$ & $-$29.203$^{***}$ \\ 
+  & (5.626) & (13.558) & (9.580) \\ 
+  & & & \\ 
+ gears &  & 38.346$^{***}$ & 21.528$^{***}$ \\ 
+  &  & (4.623) & (3.098) \\ 
+  & & & \\ 
+ cyl &  & 133.043$^{***}$ & 118.203$^{***}$ \\ 
+  &  & (9.769) & (6.496) \\ 
+  & & & \\ 
+ hwyFE &  &  & $-$46.151$^{***}$ \\ 
+  &  &  & (1.176) \\ 
+  & & & \\ 
+ Constant & 907.346$^{***}$ & 482.973$^{***}$ & 2,363.275$^{***}$ \\ 
+  & (19.127) & (33.555) & (52.844) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+AIC & 17045.649 & 16795.045 & 15799.466 \\ 
+BIC & 17060.959 & 16820.562 & 15830.086 \\ 
+Observations & 1,216 & 1,216 & 1,216 \\ 
+Adjusted R$^{2}$ & 0.677 & 0.737 & 0.884 \\ 
+Residual Std. Error & 267.286 & 240.917 & 159.921 \\ 
+F Statistic & 2,545.158$^{***}$ & 1,138.358$^{***}$ & 2,322.517$^{***}$ \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+\newpage
+\section{Table with Variables Properly Labeled}
+
+\begin{table}[!htbp] \centering 
+  \caption{Engine Characteristics' Impact on Annual Fuel Costs} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Annual Fuel Cost} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ Engine Displacement & 283.831$^{***}$ & 99.669$^{***}$ & $-$29.203$^{***}$ \\ 
+  & (5.626) & (13.558) & (9.580) \\ 
+  & & & \\ 
+ Gears &  & 38.346$^{***}$ & 21.528$^{***}$ \\ 
+  &  & (4.623) & (3.098) \\ 
+  & & & \\ 
+ Cylinders &  & 133.043$^{***}$ & 118.203$^{***}$ \\ 
+  &  & (9.769) & (6.496) \\ 
+  & & & \\ 
+ Highway Fuel Efficiency &  &  & $-$46.151$^{***}$ \\ 
+  &  &  & (1.176) \\ 
+  & & & \\ 
+ Constant & 907.346$^{***}$ & 482.973$^{***}$ & 2,363.275$^{***}$ \\ 
+  & (19.127) & (33.555) & (52.844) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+AIC & 17045.649 & 16795.045 & 15799.466 \\ 
+BIC & 17060.959 & 16820.562 & 15830.086 \\ 
+Observations & 1,216 & 1,216 & 1,216 \\ 
+Adjusted R$^{2}$ & 0.677 & 0.737 & 0.884 \\ 
+Residual Std. Error & 267.286 & 240.917 & 159.921 \\ 
+F Statistic & 2,545.158$^{***}$ & 1,138.358$^{***}$ & 2,322.517$^{***}$ \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+\end{document}
